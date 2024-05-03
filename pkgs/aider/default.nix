@@ -5,14 +5,14 @@
 
 python3Packages.buildPythonApplication rec {
   pname = "aider";
-  version = "0.28.0";
+  version = "0.30.0";
   format = "pyproject";
 
   src = fetchFromGitHub {
     owner = "paul-gauthier";
     repo = pname;
     rev = "v${version}";
-    hash = "sha256-10O88VKBO9Ph7R3hTyyahYO5dVl58Wvlwp3aD0ghuMg=";
+    hash = "sha256-qRe5cSCDsHB5atNIQQyDpT/Te21F6MkNbmNOMfGe8aw=";
   };
 
   buildInputs = with python3Packages; [
